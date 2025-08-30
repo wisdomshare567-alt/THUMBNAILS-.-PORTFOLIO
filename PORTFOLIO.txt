@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JeffVision.web</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0d0d0d;
+      color: white;
+    }
+
+    header {
+      background: #111;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      color: #ff007f;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff007f;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      color: #ff007f;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #bbb;
+    }
+
+    .btn {
+      background: #ff007f;
+      border: none;
+      padding: 12px 25px;
+      color: white;
+      margin: 20px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .btn-outline {
+      background: none;
+      border: 2px solid #ff007f;
+      color: #ff007f;
+    }
+
+    section {
+      padding: 50px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h3 {
+      color: #ff007f;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card p {
+      padding: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JeffVision.web</h1>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Premium Thumbnails That Stop the Scroll</h2>
+    <p>Gaming, Finance, and Documentary thumbnails that boost CTR.</p>
+    <button class="btn">Book a Project</button>
+    <button class="btn btn-outline">View Work</button>
+  </section>
+
+  <section id="work">
+    <h3>Featured Work</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="YOUR-GAMING-THUMBNAIL.png" alt="Gaming Thumbnail">
+        <p>Epic Gaming Thumbnail</p>
+      </div>
+      <div class="card">
+        <img src="YOUR-MONEY-THUMBNAIL.png" alt="Money Strategy Thumbnail">
+        <p>Money Strategy</p>
+      </div>
+      <div class="card">
+        <img src="YOUR-DOC-THUMBNAIL.png" alt="Documentary Thumbnail">
+        <p>Documentary Design</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
